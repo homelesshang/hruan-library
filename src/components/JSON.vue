@@ -14,7 +14,7 @@
         <li 
           v-for="a in authors" 
           :key="a.id"
-          :class="{ highlight: a.birthYear > 1850 }"
+          :class="{ : a.birthYear > 1850 }"
         >
           {{ a.name }} ({{ a.birthYear }})
         </li>
